@@ -1,0 +1,68 @@
+
+tbody td:hover{
+    background-color: chartreuse;
+}
+
+table {
+    width: 500px;
+    margin: auto;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	text-align: left;
+}
+
+th {border-bottom: 1px solid #fff;
+    font-size: 13px;
+    padding: 10px;
+}
+
+td {padding: 10px;
+    border-top: 1px solid transparent;
+	border-bottom: 1px solid white;
+    background: white;
+    border-spacing: 0;
+}
+ 
+tr > td:first-child {
+    background-color: blue;
+    color: white;
+    text-align: right;
+}
+
+tr > td:last-child {
+    padding: 5px;
+    background-color: blue;
+    
+}
+
+
+table thead tr:first-of-type {
+    background-color: black;
+    color: white
+}
+
+table thead tr:nth-of-type(2) {
+    background-color: darkcyan;
+    color: white;
+}
+
+
+tr td:nth-child(2){
+    background-color: aquamarine;
+    font-weight: bold;
+}
+
+
+tr td:nth-child(2n+3){
+    background-color: darkgrey;
+}
+
+tr:hover td	{
+	background: palegreen;
+	color: darkblue;
+}

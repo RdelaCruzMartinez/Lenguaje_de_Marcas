@@ -1,0 +1,202 @@
+@font-face {
+	font-family: "bebasneue";
+	src: url('bebasneue-webfont.ttf') format('truetype');
+}
+
+/*{border: 1px solid red}*/
+
+/* hover reaction*/
+strong a:hover{
+	border-bottom: dashed 1px;
+	color: blue;}
+
+aside a:hover{
+    background-color: #3d667e;
+    color: white;
+}
+
+footer a:hover{
+	color: blue;
+	background-color: white;
+	border-radius: 1em;
+}
+
+/* body */
+body {
+	font-size: 100%; 
+	/*font-family:'bebasneue',sans-serif;*/
+	font-family: sans-serif;
+	text-align: justify; background-image: url(../img/bg.png);
+	font-weight: lighter; 
+}
+
+header nav#menu {
+    margin: 0;
+    padding: 0;
+    width: 45%;
+    position: absolute;
+    top: 9%;
+    right: 5%
+}
+
+header #menu li{
+    display: inline;
+    width: 100%;
+}
+
+header #menu a{
+    display: inline-block;
+    padding: 0 2em
+}
+
+header
+
+header div.logo h1 {
+	font-size: 300%;
+}
+
+header div.logo p {
+	font-size: 150%;
+}
+
+header div#banner {background-image: url(../img/img-banner.png);
+	width: 1300px;	height: 320px; 
+	position: center;
+	clear: both;
+}
+
+header div#blackcontainer {
+    width: 43%;
+    height: 20%;
+    background-color: black;
+    margin-left: 50%;
+    position: absolute;
+    top: 47%;
+    right: 4%;
+    opacity: 0.5
+}
+
+header div#banner h2 {
+	font-size: 250%;
+    position: absolute;
+    top: 47%;
+    right: 4%;
+	color: white;
+}
+
+header div#banner p {
+	position: absolute;
+    top: 59%;
+    right: 16%;
+	color: white;
+}
+
+section div#mountain {
+	background-image: url(../img/img-main.png);
+    width: 800px;
+    height: 300px;
+}
+
+footer #footerMenu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+footer #footerMenu li {
+	display: inline;
+}
+
+footer #footerMenu li a {
+	margin-left: 9em;
+	padding: .4em;
+}
+
+section {
+    padding: 1em 2%;
+    margin: 0 2% 1em;
+    float: left;
+    width: 55%;
+    
+}
+
+aside{
+    border: 1px solid; color:grey;
+    margin: 1em 2% 0 75%;
+    padding: 0;
+}
+
+aside h3 {
+    text-align: center;
+}
+
+aside #recursos{
+    list-style: none;
+    position: relative;
+    top: 70%;
+    right: 6%;
+    margin: auto;
+    padding: 0;
+}
+
+aside li {
+    margin: 1em
+}
+
+aside ul#equipo li:nth-child(1) {
+    list-style-image: url(../img/img-jason.jpeg);
+}
+
+aside ul#equipo li:nth-child(2) {
+    list-style-image: url(../img/img-nick.jpeg);
+}
+
+aside ul#equipo li:nth-child(3) {
+    list-style-image: url(../img/img-tim.jpeg);
+}
+
+aside ul#equipo li:nth-child(4) {
+    list-style-image: url(../img/img-drew.png);
+}
+
+aside ul#equipo li:nth-child(5) {
+    list-style-image: url(../img/img-justin.jpeg);
+}
+
+aside ul#equipo{
+    clear: right;
+}
+
+asidel ul{
+    background-color: darkgreen;
+}
+
+aside a{
+    background-color:azure;
+    display: block;
+    padding: .5em;
+    margin: .25em;
+    }
+
+footer{clear: both;}
+
+footer nav {
+	background-color: #3d667e;
+	padding: .5em;
+	border-radius: .4em;
+}
+
+footer a{
+	color: white;
+}
+
+h3 {font-size: 200%; color: dimgrey }
+
+a {
+	text-decoration: none;
+}
+
+
+strong a{
+	color: black;
+}
