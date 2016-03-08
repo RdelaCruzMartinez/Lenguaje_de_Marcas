@@ -8,13 +8,13 @@
 	 <xs:element name="eDreams">
 	 	<xs:complexType>
 	 		<xs:sequence>
-	 			<xs:element name="vuelo">
+	 			<xs:element name="vuelo" type="ed:vuelos">
 	 			</xs:element>
 	 		</xs:sequence>
 	 	</xs:complexType>
 	 </xs:element>
  
-	 <xs:complexType name="vuelo">
+	 <xs:complexType name="vuelos">
 	 	<xs:sequence>
 	 		<xs:element name="viaje" type="ed:viaje"></xs:element>
 	 		<xs:element name="fecha" type="ed:fecha"></xs:element>
