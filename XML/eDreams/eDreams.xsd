@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+ targetNamespace="http://www.edreams.es"
+ xmlns:ed="http://www.edreams.es"
+ elementFormDefault="unqualified"
+ attributeFormDefault="unqualified">
+ 
+	 <xs:element name="eDreams">
+	 	<xs:complexType>
+	 		<xs:sequence>
+	 			<xs:element name="vuelo">
+	 			</xs:element>
+	 		</xs:sequence>
+	 	</xs:complexType>
+	 </xs:element>
+ 
+	 <xs:complexType name="vuelo">
+	 	<xs:sequence>
+	 		<xs:element name="viaje" type="ed:viaje"></xs:element>
+	 		<xs:element name="fecha" type="ed:fecha"></xs:element>
+	 		<xs:element name="pasajeros" type="ed:pasajeros"></xs:element>
+	 		<xs:element name="clase" type="ed:clase"></xs:element>
+	 	</xs:sequence>
+	 </xs:complexType>
+ 
+	 <xs:complexType name="viaje">
+	 	<xs:sequence>
+	 		<xs:element name="origen" type="xs:string"></xs:element>
+	 		<xs:element name="destino" type="xs:string"></xs:element>
+	 		<xs:element name="escalas" type="xs:boolean"></xs:element>
+	 	</xs:sequence>
+	 </xs:complexType>
+ 
+	 <xs:complexType name="fecha">
+	 	<xs:sequence>
+	 		<xs:element name="salida" type="xs:date"></xs:element>
+	 		<xs:element name="regreso" type="xs:date"></xs:element>
+	 	</xs:sequence>
+	 </xs:complexType>
+ 
+	 <xs:complexType name="pasajeros">
+	 	<xs:sequence>
+	 		<xs:element name="adultos" type="xs:integer"></xs:element>
+	 		<xs:element name="ninos" type="xs:integer"></xs:element>
+	 		<xs:element name="bebes" type="xs:integer"></xs:element>
+	 	</xs:sequence>
+	 </xs:complexType>
+ 
+	 <xs:complexType name="clase">
+	 	<xs:choice>
+	 		<xs:element name="turista">
+	 			<xs:complexType></xs:complexType>
+	 		</xs:element>
+	 		<xs:element name="turista_superior">
+	 			<xs:complexType></xs:complexType>
+	 		</xs:element>
+	 		 <xs:element name="bussines">
+	 			<xs:complexType></xs:complexType>
+	 		</xs:element>
+	 		<xs:element name="primera">
+	 			<xs:complexType></xs:complexType>
+	 		</xs:element>
+	 	</xs:choice>
+	 </xs:complexType>
+ 
+ 
+</xs:schema>
