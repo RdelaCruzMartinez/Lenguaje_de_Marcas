@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+ targetNamespace="http://www.edreams.es"
+ xmlns:ed="http://www.edreams.es"
+ elementFormDefault="unqualified"
+ attributeFormDefault="unqualified">
+ 
+ <!--Include, debe ser el primer elemento hijo del esquema principal.-->
+ <xs:include schemaLocation="eDreams_include.xsd"/>
+ 
+ 
+	 <xs:element name="eDreams">
+	 	<xs:complexType>
+	 		<xs:sequence>
+	 			<xs:element name="vuelo" type="ed:vuelos">
+	 			</xs:element>
+	 		</xs:sequence>
+	 	</xs:complexType>
+	 </xs:element>
+ 
+	 <xs:complexType name="vuelos">
+	 	<xs:sequence>
+	 		<xs:element name="viaje" type="ed:viaje"></xs:element>
+	 		<xs:element name="fecha" type="ed:fecha"></xs:element>
+	 		<xs:element name="pasajeros" type="ed:pasajeros"></xs:element>
+	 		<xs:element name="clase" type="ed:clase"></xs:element>
+	 	</xs:sequence>
+	 </xs:complexType>
+
+</xs:schema>

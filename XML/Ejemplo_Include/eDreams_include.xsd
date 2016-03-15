@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:ed="http://www.edreams.es" 
+xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+attributeFormDefault="unqualified" 
+elementFormDefault="unqualified" 
+targetNamespace="http://www.edreams.es">
+ 
+  
+	 <xs:complexType name="viaje">
+	 	<xs:sequence>
+	 		<xs:element name="origen" type="xs:string"/>
+	 		<xs:element name="destino" type="xs:string"/>
+	 		<xs:element name="escalas" type="xs:boolean"/>
+	 	</xs:sequence>
+	 </xs:complexType>
+ 
+	 <xs:complexType name="fecha">
+	 	<xs:sequence>
+	 		<xs:element name="salida" type="xs:date"/>
+	 		<xs:element name="regreso" type="xs:date"/>
+	 	</xs:sequence>
+	 </xs:complexType>
+ 
+	 <xs:complexType name="pasajeros">
+	 	<xs:sequence>
+	 		<xs:element name="adultos" type="xs:integer"/>
+	 		<xs:element name="ninos" type="xs:integer"/>
+	 		<xs:element name="bebes" type="xs:integer"/>
+	 	</xs:sequence>
+	 </xs:complexType>
+ 
+	 <xs:complexType name="clase">
+	 	<xs:choice>
+	 		<xs:element name="turista">
+	 			<xs:complexType/>
+	 		</xs:element>
+	 		<xs:element name="turista_superior">
+	 			<xs:complexType/>
+	 		</xs:element>
+	 		 <xs:element name="bussines">
+	 			<xs:complexType/>
+	 		</xs:element>
+	 		<xs:element name="primera">
+	 			<xs:complexType/>
+	 		</xs:element>
+	 	</xs:choice>
+	 </xs:complexType>
+ 
+ 
+ </xs:schema>
